@@ -96,7 +96,7 @@ Now you can use the executable generated in `build`:
     user    0m0,000s
     sys     0m5,322s
     
-    $ time ./sane_file_transfer --alg1_sync /home/rbenedetti/test.iso /run/media/rbenedetti/PortableHDD_NTFS/test.iso
+    $ time ./sane_file_transfer --alg1_async /home/rbenedetti/test.iso /run/media/rbenedetti/PortableHDD_NTFS/test.iso
     Witen: 3383MB | 100% | 241.64MBps | 14.00sec
     File copied successfully.
     
@@ -104,7 +104,7 @@ Now you can use the executable generated in `build`:
     user    0m0,000s
     sys     0m5,468s
     
-    $ time ( ./sane_file_transfer --alg1_sync /home/rbenedetti/test.iso /run/media/rbenedetti/PortableHDD_NTFS/test.iso && sync )
+    $ time ( ./sane_file_transfer --alg1_async /home/rbenedetti/test.iso /run/media/rbenedetti/PortableHDD_NTFS/test.iso && sync )
     Witen: 3383MB | 100% | 225.53MBps | 15.00sec
     File copied successfully.
     
