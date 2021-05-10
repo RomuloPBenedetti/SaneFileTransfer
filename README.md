@@ -4,8 +4,8 @@ This repository contains some Linux's file transference algorithms that explore
 Linux Dirty page fragility, at the moment it is mostly focused on transference to 
 slow external devices and big single files.
 
+## The Problem
 
-##The Problem
 
 Most linux distros out there allow programs to allocate huge amounts of dirty pages
 before the kernel start writing them to disk and even bigger amounts until
@@ -40,7 +40,7 @@ This is not a new problem, There is some discussion around external devices and 
 to times, an example is:
 [The pernicious USB-stick stall problem](https://lwn.net/Articles/572911/)
 
-##Possible Solutions
+## Possible Solutions
 
 As seen in `lwn.net`, there are some ideas being discussed at kernel side that may or may not be implemented in the 
 future, like separating dirty page limits per device, dividing the dirty page caching into some sort of writethrough and 
@@ -79,7 +79,7 @@ After each chunk, `fdsync()` is issued to request that data be writen back to de
 * Other optimizations around copy_file_range, sparse files, parallel copying, etc.
 * detection of best scenarios where to use or not `fdsync()`.
 
-##How To Build And Use
+## How To Build And Use
 
     mkdir build
     cd build
